@@ -24,5 +24,5 @@ const server = http.createServer((req, res) => {
     }
 })
 
-server.listen(port, () => console.log(`Listen to http://localhost:${port}`));
+// server.listen(port, () => console.log(`Listen to http://localhost:${port}`));
 
