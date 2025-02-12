@@ -1,14 +1,6 @@
-import { createServer } from 'node:http';
+const { Person } = require('./person');
+// require('./modules/path');
+// require('./modules/fs');
 
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
-});
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
+const person = new Person('Alice');
+console.log(person.sayMyName());
